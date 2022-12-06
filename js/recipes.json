@@ -1,0 +1,121 @@
+{
+    "recipes": [
+        {
+            "name": "Beet Tartare",
+            "image": "https://assets.bonappetit.com/photos/63729fa91a2d6c616b331853/1:1/w_960,c_limit/20221010-1222-fancyfrugal-beettartarec-lede.jpg",
+            "description": "Boldly seasoned and finely chopped, these beets have the earthy taste of classic beef tartare, and look the part too",
+            "category": [
+                "vegeterian",
+                "Gluten-Free"
+            ],
+            "price": 20.90
+        },
+        {
+            "name": "Cranberry Orange Sauce With Cinnamon",
+            "image": "https://assets.bonappetit.com/photos/5bc10bdb3f3b4638f1376c88/1:1/w_960,c_limit/cranberry-sauce-with-orange-and-cinnamon.jpg",
+            "description": "Bright citrus and warming cinnamon are the complements cranberries look for this time of the year, and navel oranges conveniently come into season just in time for the holiday",
+            "category": [
+                "vegeterian"
+            ],
+            "price": 26.50
+        },
+        {
+            "name": "Balsamic-Roasted Brussels Sprouts",
+            "image": "https://assets.bonappetit.com/photos/635049dac8b1604157059608/1:1/w_960,c_limit/1019-brussels-sprouts-lede.jpg",
+            "description": "These deeply caramelized, tender, flavorful sprouts get coated in a simple, sweet-savory sauce",
+            "category": [
+                "vegeterian"
+            ],
+            "price": 25.90
+        },
+        {
+            "name": "Lemon-Oregano Shrimp and Tiny Potatoes",
+            "image": "https://assets.bonappetit.com/photos/63698ccc0e4ab91096cfb5a5/1:1/w_960,c_limit/1107-shrimp-potatoes-cooking-lede.jpg",
+            "description": "This weeknight dinner is anything but bland thanks to the flavorful combination of garlic, capers and fresh shrimp",
+            "category": [
+                "Gluten-Free"
+            ],
+            "price": 37
+        },
+        {
+            "name": "Chile-Vinegar-Marinated Cornish Game Hens",
+            "image": "https://assets.bonappetit.com/photos/6346e7141622797c0ab8c49d/1:1/w_960,c_limit/1012-alt-birds-3-lede.jpg",
+            "description": "Hens with a fiery, tangy chile marinade inspired by Goan recheado masala.",
+            "category": [
+                "Gluten-Free"
+            ],
+            "price": 32.50
+        },
+        {
+            "name": "Rosemary-Sizzled Salami, Dates, and Pecans",
+            "image": "https://assets.bonappetit.com/photos/6346fe37ce897d53e241b158/1:1/w_960,c_limit/1012-easy-apps-Rosemary-Sizzled-Salami.jpeg",
+            "description": "Salty, crunchy, sweet, and meaty, this warm mix is a combination of party appetizer heavy hitters",
+            "category": [
+                "Gluten-Free"
+            ],
+            "price": 16.99
+        },
+        {
+            "name": "Raspberry-Almond Thumbprint Cookies",
+            "image": "https://assets.bonappetit.com/photos/6373fd77100aed197879449c/1:1/w_960,c_limit/1115-clairedesserts-raspberry-thumbprints-lede.jpg",
+            "description": "Crispy on the outside, chewy on the inside.",
+            "category": [
+                "Deserts",
+                "Gluten-Free"
+            ],
+            "price": 15.99
+        },
+        {
+            "name": "Chocolate Paradis With Almond Praline",
+            "image": "https://assets.bonappetit.com/photos/6374cb3e6cc47ec05a9b4586/1:1/w_960,c_limit/20221011%201222%20PEPIN%2013173.jpg",
+            "description": "Caramelized almonds make this dense, velvety chocolate mousse party-ready.",
+            "category": [
+                "Deserts",
+                "Gluten-Free"
+            ],
+            "price": 15.99
+        },
+        {
+            "name": "Citrus Caramel Sundaes With Toasted Almonds",
+            "image": "https://assets.bonappetit.com/photos/6372a6d0ba2752c31712615e/1:1/w_960,c_limit/20221010-1222-fancyfrugal-pickledveg-12594.jpg",
+            "description": "Tangy, floral citrus soaks up dark, smoky caramel for a sweet, sticky sundae unlike any other.",
+            "category": [
+                "Deserts"
+            ],
+            "price": 18.99
+        },
+        {
+            "name": "Strip Steak With Umami Butter Sauce",
+            "image": "https://assets.bonappetit.com/photos/6282c928044b091115bc3323/1:1/w_640,c_limit/0622-Strip-Steak-With-Umami-Butter-Sauce.jpg 640w, https://assets.bonappetit.com/photos/6282c928044b091115bc3323/1:1/w_960,c_limit/0622-Strip-Steak-With-Umami-Butter-Sauce.jpg",
+            "description": "Strip steak cover with a 5-ingredient sauce made in house.",
+            "category": [
+                "Keto"
+            ],
+            "price": 32.80
+        },
+        {
+            "name": "Charred Eggplant With Spicy Tomato Sauce and Peanuts",
+            "image": "https://assets.bonappetit.com/photos/60da23c135f32d766e1533a6/1:1/w_960,c_limit/Veggies-Charred%20Eggplant%20With%20Spicy%20Tomato%20Sauce%20and%20Peanuts.jpg",
+            "description": "Spicy charred tomato sauce inspired by the Thai condiment nam prik complements silky grilled eggplant and crunchy.",
+            "category": [
+                "Keto"
+            ],
+            "price": 23
+        },
+        {
+            "name": "Roasted Chicken With Tomatoes",
+            "image": "https://assets.bonappetit.com/photos/60ad1266248102a01bcfa203/1:1/w_960,c_limit/0621-Chicken-with-Tomatoes-UPDATE.jpg",
+            "description": "Tomato salad with a lemony, oniony roast chicken on top",
+            "category": [
+                "Keto"
+            ],
+            "price": 52
+        }
+    ],
+    "categories": [
+        "vegeterian",
+        "Deserts",
+        "Gluten-Free",
+        "Keto"
+    ]
+}
