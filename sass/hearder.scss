@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +8,23 @@
     box-sizing: border-box;
     list-style: none;
 }
-
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+}
 header{
     overflow: hidden;
     
     h1{
-        margin: 5vw;
-        font-size: 10vw;
+        margin: 3.5vw 5vw 0;
+        font-size: 6vw;
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
     }
     nav{
-       transform: translateY(-150vw);
-        background-color:rgb(32, 32, 32);
+        transform: translateY(-130vw);
+        background-color:transparent;
+        color: transparent;
         width: 100vw;
         height: 110vw;
         position: absolute;
@@ -27,8 +36,8 @@ header{
             margin-top: 15vw;
             li{
                 margin-bottom: 9vw;
-                font-size: 7.5vw;
-                color:  rgb(255, 255, 255);
+                font-size: 5vw;
+                color: transparent;
                 &:hover{
                     color: rgb(210, 204, 204);
                 }
@@ -37,10 +46,10 @@ header{
     }
     .order{
         text-align: center;
-        margin: 0 35vw;
-        background-color: rgb(255, 255, 255);
+        margin: 0 38vw;
+        background-color: transparent;
         border-radius: 5vw;
-        color: rgb(32, 32, 32);
+        color: transparent;
         &:hover{
             background-color: transparent;
             color:rgb(255, 255, 255);
@@ -50,15 +59,14 @@ header{
     }
     }
     //menu hamburger
-
     //before on click
   .menu {
-    top: 11.5vw;
-    left: 90vw;
+    top: 7.7vw;
+    left: 95vw;
     transform: translate(-50%, -50%);
     position: absolute;
     z-index: 10;
-    width: 10vw;
+    width: 6vw;
   }
   .menu:before,
   .menu:after,
@@ -68,24 +76,149 @@ header{
     display: block;
     height: 0.5vw;
     border-radius: 3px;
-    margin: 4vw 0;
-
- // after on click
+    margin: 1.3vw 0;
   }
-  .menu:active:before {
-    transform: translateY(4.5vw) rotate(135deg);
-    background-color:green;
-  }
-  .menu:active:after {
-    transform: translateY(-4.5vw) rotate(-135deg);
-    background-color: green;
-  }
-    .menu:active div {
-    transform: scale(0);
-  }
- .menu:active{
-    nav{
-        transform: translateY(0);
-        transition: 0.5s; 
+   // after on click
+   .active:before {
+        transform: translateY(1.8vw) rotate(135deg);
+        background-color:white;
+      }
+      .active:after {
+        transform: translateY(-1.8vw) rotate(-135deg);
+        background-color: white;
+      }
+      .active div {
+        transform: scale(0);
+      }
+   .active + nav{
+    transform: translateY(0);
+    transition: 0.5s; 
+    color: white;
+    background-color: #272727;
+    .order{
+        color: #272727;
+        background-color: white;
     }
- }
+    li{
+        color: white;
+    }
+   
+} 
+
+.intro{
+    display: flex;
+
+    .kitchen_container{
+    width: 50vw;
+    margin-left: 5vw;
+    h2{
+        margin-top:10vw;
+        font-family: 'Playfair Display', serif;
+        font-size: 6vw;
+        font-weight: 700;
+    }
+    p{
+        margin-top: 2.5vw;
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+    a{
+        background-color: #272727;
+        color: white;
+        padding: 1.5vw 1vw;
+        
+    }
+    }
+    .kitchen_image{
+        z-index: -1;
+        position: absolute;
+        width: 40vw;
+        height: 140vw;
+        right: 0vw;
+        top: -9.5vw;
+        background-image: url(https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-size: 110vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    
+    
+
+    
+}
+ @media screen and (min-width : 768px){  
+body{
+    overflow: hidden;
+}
+    .menu{
+        display: none;
+    }
+    header{
+        overflow: hidden;
+        
+        h1{
+            margin-top: 1vw;
+            margin-left: 5vw;
+            font-size: 3vw;
+        }
+        nav{
+            display: inline-block;
+            flex-direction: column;
+            transform: translateY(0);
+            background-color: transparent;
+            width: 40vw;
+            left: 59vw;
+            top: 1.9vw;
+            transition: none;
+            ul{
+                text-align: center;
+                height: 3vw;
+                margin-top: 1vw;
+                display: flex;
+                li{
+                    margin-left: 2.5vw;
+                    font-size: 1.5vw;
+                    color:  rgb(32, 32, 32);
+                    &:hover{
+                        color: rgb(79, 77, 77);
+                    }
+                }
+                .order{
+                    margin: 0;
+                    margin-left: 3vw;
+                    background: none;
+                    font-weight: 900;
+                    font-size: 1.7vw;
+                    &:hover{
+                        color: rgb(79, 77, 77);;
+                        border: none;
+                    }
+                }
+            }
+        }}
+        .intro{
+            .kitchen_container{
+                width: 30vw;
+                h2{
+                    font-size: 4vw;
+                    margin-top: 5vw;
+                }
+                p{
+                    font-size: 1.3vw;
+                    margin-bottom: 3vw;
+                }
+                a{
+                    padding: 0.5vw ;
+                    font-size: 1.3vw;
+                }
+            }
+            .kitchen_image{
+                top: 7.5vw;
+                width: 45vw;
+                height: 35vw;
+                background-size: 50vw;
+                margin-right: 1vw;
+            }
+        }
+    }
