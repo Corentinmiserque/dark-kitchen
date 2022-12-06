@@ -14,10 +14,10 @@ header h1 {
   font-size: 10vw;
 }
 header nav {
-  transform: translateY(-100vw);
+  transform: translateY(-150vw);
   background-color: rgb(32, 32, 32);
   width: 100vw;
-  height: 100vw;
+  height: 110vw;
   position: absolute;
   left: 0;
   top: 0;
@@ -71,19 +71,19 @@ header .order:hover {
 
 .menu:active:before {
   transform: translateY(4.5vw) rotate(135deg);
-  background-color: white;
+  background-color: green;
 }
 
 .menu:active:after {
   transform: translateY(-4.5vw) rotate(-135deg);
-  background-color: white;
+  background-color: green;
 }
 
 .menu:active div {
   transform: scale(0);
 }
 
-header:active nav {
+.menu:active nav {
   transform: translateY(0);
   transition: 0.5s;
 }/*# sourceMappingURL=hearder.css.map */

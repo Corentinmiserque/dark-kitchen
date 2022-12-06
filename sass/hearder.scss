@@ -14,11 +14,10 @@ header{
         font-size: 10vw;
     }
     nav{
-       
-       transform: translateY(-100vw);
+       transform: translateY(-150vw);
         background-color:rgb(32, 32, 32);
         width: 100vw;
-        height: 100vw;
+        height: 110vw;
         position: absolute;
         left: 0;
         top: 0;
@@ -47,11 +46,9 @@ header{
             color:rgb(255, 255, 255);
             border: 0.2vw solid rgb(255, 255, 255);
             transition: 0.15s;
-            
         }
     }
     }
-
     //menu hamburger
 
     //before on click
@@ -77,22 +74,18 @@ header{
   }
   .menu:active:before {
     transform: translateY(4.5vw) rotate(135deg);
-    background-color: white;
+    background-color:green;
   }
   .menu:active:after {
     transform: translateY(-4.5vw) rotate(-135deg);
-    background-color: white;
+    background-color: green;
   }
     .menu:active div {
     transform: scale(0);
   }
-  header:active{
+ .menu:active{
     nav{
         transform: translateY(0);
-        transition: 0.5s;
+        transition: 0.5s; 
     }
-  }
- 
-.open{
-    
-}
+ }
