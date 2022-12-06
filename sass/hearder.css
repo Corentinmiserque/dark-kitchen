@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+header {
+  overflow: hidden;
+}
+header h1 {
+  margin: 5vw;
+  font-size: 10vw;
+}
+header nav {
+  transform: translateY(-100vw);
+  background-color: rgb(32, 32, 32);
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.25s;
+}
+header nav ul {
+  text-align: center;
+  margin-top: 15vw;
+}
+header nav ul li {
+  margin-bottom: 4vw;
+  font-size: 7.5vw;
+  color: rgb(255, 255, 255);
+}
+header nav ul li:hover {
+  color: rgb(210, 204, 204);
+}
+header .order {
+  text-align: center;
+  margin: 0 35vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5vw;
+  color: rgb(32, 32, 32);
+}
+header .order:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 0.2vw solid rgb(255, 255, 255);
+  transition: 0.15s;
+}
+
+.menu {
+  top: 11.5vw;
+  left: 90vw;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 10;
+  width: 10vw;
+}
+
+.menu:before,
+.menu:after,
+.menu div {
+  background-color: black;
+  content: "";
+  display: block;
+  height: 0.5vw;
+  border-radius: 3px;
+  margin: 4vw 0;
+}
+
+.menu:active:before {
+  transform: translateY(4.5vw) rotate(135deg);
+  background-color: white;
+}
+
+.menu:active:after {
+  transform: translateY(-4.5vw) rotate(-135deg);
+  background-color: white;
+}
+
+.menu:active div {
+  transform: scale(0);
+}
+
+header:active nav {
+  transform: translateY(0);
+  transition: 0.5s;
+}/*# sourceMappingURL=hearder.css.map */
