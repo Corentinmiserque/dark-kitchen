@@ -55,7 +55,7 @@
     &__responsive{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 90%;
     }
     &__menu{
@@ -67,7 +67,7 @@
             display: none;
             flex-direction: column;
             li{
-            padding: 2vw;
+            padding: 1vw;
             a:hover{
                 text-decoration: underline;
             }
@@ -118,6 +118,9 @@
         .arrow{
             display: none;
         }
+        .contact{
+            text-align: left;
+        }
         &__menu{
             &--sublist{
                 display: flex;
@@ -125,32 +128,35 @@
                     background-image: url("../assets/icons/e-mail.png");
                     background-size: 15px 15px ;
                     background-repeat: no-repeat;
-                    background-position: left;
-                    padding: 8px 25px ;           
+                    background-position: left;       
                 }
                 .phone{    
                     background-image: url("../assets/icons/appel-telephonique.png");
                     background-size: 15px 15px ;
                     background-repeat: no-repeat;
                     background-position: left;
-                    padding: 8px 25px ;           
                 }
                 .Careers{    
                     background-image: url("../assets/icons/study.png");
                     background-size: 15px 15px ;
                     background-repeat: no-repeat;
-                    background-position: left;
-                    padding: 8px 12px ;           
+                    background-position: left;                         
                 }
                 .FAQ{    
                     background-image: url("../assets/icons/faq.png");
                     background-size: 15px 15px ;
                     background-repeat: no-repeat;
-                    background-position: left;
-                    padding: 8px 25px ;           
+                    background-position: left;                             
+                }
+                .city{    
+                    background-image: url("../assets/icons/map.png");
+                    background-size: 15px 15px ;
+                    background-repeat: no-repeat;
+                    background-position: left;                             
                 }
                 li{
-                    padding: 0.5vw;
+                    text-align: left;
+                    padding: 0.5vw 2vw;
                 }
             }
         }
@@ -162,6 +168,14 @@
         }
     }
 }
+
+@media screen and (min-width:1048px){
+    .footer{
+        height: 35vw;
+    }
+}
+    
+
 
 //animation
 @keyframes rotation{

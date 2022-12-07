@@ -52,7 +52,7 @@
 .footer__responsive {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 90%;
 }
 .footer__menu {
@@ -66,7 +66,7 @@
   flex-direction: column;
 }
 .footer__menu--sublist li {
-  padding: 2vw;
+  padding: 1vw;
 }
 .footer__menu--sublist li a:hover {
   text-decoration: underline;
@@ -114,6 +114,9 @@
   .footer .arrow {
     display: none;
   }
+  .footer .contact {
+    text-align: left;
+  }
   .footer__menu--sublist {
     display: flex;
   }
@@ -122,35 +125,43 @@
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
-    padding: 8px 25px;
   }
   .footer__menu--sublist .phone {
     background-image: url("../assets/icons/appel-telephonique.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
-    padding: 8px 25px;
   }
   .footer__menu--sublist .Careers {
     background-image: url("../assets/icons/study.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
-    padding: 8px 12px;
   }
   .footer__menu--sublist .FAQ {
     background-image: url("../assets/icons/faq.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
-    padding: 8px 25px;
+  }
+  .footer__menu--sublist .city {
+    background-image: url("../assets/icons/map.png");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: left;
   }
   .footer__menu--sublist li {
-    padding: 0.5vw;
+    text-align: left;
+    padding: 0.5vw 2vw;
   }
   .footer__icons li {
     width: 3vw;
     height: 3vw;
+  }
+}
+@media screen and (min-width: 1048px) {
+  .footer {
+    height: 35vw;
   }
 }
 @-webkit-keyframes rotation {
