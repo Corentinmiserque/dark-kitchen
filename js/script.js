@@ -1,4 +1,4 @@
-const menu = document.querySelector(".list_button");
+const menu = document.querySelector(".meals__categories");
 var last_button="";
 menu.addEventListener("click",(e) =>{
 if(e.target.classList.contains('button')){

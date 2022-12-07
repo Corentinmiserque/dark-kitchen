@@ -22,7 +22,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.catégorie .list_button {
+.catégorie .meals__categories {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -30,7 +30,7 @@ body {
   --underline-offset-x: 0;
   position: relative;
 }
-.catégorie .list_button::before {
+.catégorie .meals__categories::before {
   content: "";
   position: absolute;
   top: 70%;
@@ -41,7 +41,7 @@ body {
   transform: translateX(var(--underline-offset-x));
   transition: transform 0.5s, width 0.5s;
 }
-.catégorie .list_button .button {
+.catégorie .meals__categories .button {
   border: none;
   color: black;
   background-color: white;
