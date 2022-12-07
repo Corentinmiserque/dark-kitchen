@@ -1,0 +1,45 @@
+@import "_variables";
+// || Reset rules
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+// || General rules
+body{
+    font-family: $bodyFont;
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: $headingFont;
+}
+
+button{
+    cursor: pointer;
+    font: inherit;
+}
+
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.btn{
+    background: none;
+    border: none;
+}
