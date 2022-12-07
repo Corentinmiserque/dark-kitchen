@@ -137,6 +137,7 @@ header .order:hover {
   color: white;
   padding: 1.5vw 1vw;
   overflow: hidden;
+  font-size: 3.5vw;
 }
 .intro .kitchen_image {
   z-index: -1;
