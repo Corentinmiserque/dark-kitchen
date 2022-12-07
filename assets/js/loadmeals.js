@@ -34,7 +34,7 @@ const createCard = (meal) => {
                 </p>
             </div>
             <div class="meal-card__footer">
-                <p class="meal-card__price">${meal.price}€</p>
+                <p class="meal-card__price">${new Intl.NumberFormat("fr-BE", { style: "currency", currency: "EUR"}).format(meal.price)}</p>
                 <ul class="meal-card__cart-info">
                     <li class="meal-card__cart-action-remove">
                         <button id="remove-from-cart-btn" class="btn">-</button>
