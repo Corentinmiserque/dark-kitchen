@@ -1,11 +1,11 @@
 {
-    "recipes": [
+    "meals": [
         {
             "name": "Beet Tartare",
             "image": "https://assets.bonappetit.com/photos/63729fa91a2d6c616b331853/1:1/w_960,c_limit/20221010-1222-fancyfrugal-beettartarec-lede.jpg",
             "description": "Boldly seasoned and finely chopped, these beets have the earthy taste of classic beef tartare, and look the part too",
             "category": [
-                "vegeterian",
+                "Vegeterian",
                 "Gluten-Free"
             ],
             "price": 20.90
@@ -13,9 +13,9 @@
         {
             "name": "Cranberry Orange Sauce With Cinnamon",
             "image": "https://assets.bonappetit.com/photos/5bc10bdb3f3b4638f1376c88/1:1/w_960,c_limit/cranberry-sauce-with-orange-and-cinnamon.jpg",
-            "description": "Bright citrus and warming cinnamon are the complements cranberries look for this time of the year, and navel oranges conveniently come into season just in time for the holiday",
+            "description": "Bright citrus and warming cinnamon are the complements cranberries look for this time of the year",
             "category": [
-                "vegeterian"
+                "Vegeterian"
             ],
             "price": 26.50
         },
@@ -24,7 +24,7 @@
             "image": "https://assets.bonappetit.com/photos/635049dac8b1604157059608/1:1/w_960,c_limit/1019-brussels-sprouts-lede.jpg",
             "description": "These deeply caramelized, tender, flavorful sprouts get coated in a simple, sweet-savory sauce",
             "category": [
-                "vegeterian"
+                "Vegeterian"
             ],
             "price": 25.90
         },
@@ -113,7 +113,8 @@
         }
     ],
     "categories": [
-        "vegeterian",
+        "All",
+        "Vegeterian",
         "Deserts",
         "Gluten-Free",
         "Keto"
