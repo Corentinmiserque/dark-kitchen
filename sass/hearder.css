@@ -51,6 +51,7 @@ header .order {
   background-color: transparent;
   border-radius: 5vw;
   color: transparent;
+  font-weight: 500;
 }
 header .order:hover {
   background-color: transparent;
@@ -102,6 +103,10 @@ header .order:hover {
 .active + nav .order {
   color: #272727;
   background-color: white;
+}
+.active + nav .order:hover {
+  background-color: transparent;
+  color: white;
 }
 .active + nav li {
   color: white;
@@ -186,7 +191,7 @@ header .order:hover {
     margin: 0;
     margin-left: 3vw;
     background: none;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.7vw;
     color: #272727;
   }

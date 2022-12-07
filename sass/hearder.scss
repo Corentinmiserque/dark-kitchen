@@ -50,6 +50,7 @@ header{
         background-color: transparent;
         border-radius: 5vw;
         color: transparent;
+        font-weight: 500;
         &:hover{
             background-color: transparent;
             color:rgb(255, 255, 255);
@@ -98,6 +99,10 @@ header{
     .order{
         color: #272727;
         background-color: white;
+        &:hover{
+            background-color:transparent;
+            color: white;
+        }
     }
     li{
         color: white;
@@ -188,11 +193,11 @@ body{
                     margin: 0;
                     margin-left: 3vw;
                     background: none;
-                    font-weight: 900;
+                    font-weight: 700;
                     font-size: 1.7vw;
                     color: #272727;
                     &:hover{
-                        color: rgb(79, 77, 77);;
+                        color: rgb(79, 77, 77);
                         border: none;
                     }
                 }
