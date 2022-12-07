@@ -9,7 +9,7 @@ if(e.target.classList.contains('button')){
 
 
 
-addEventListener("resize", (event) => {
+window.addEventListener("resize", (event) => {
     menu.style.setProperty('--underline-offset-x', `${last_button.offsetLeft}px`)
     menu.style.setProperty('--underline-width', `${last_button.offsetWidth}px`);
 });
