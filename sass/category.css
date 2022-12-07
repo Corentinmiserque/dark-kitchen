@@ -28,7 +28,6 @@ body {
   width: fit-content;
   --underline-width: 0;
   --underline-offset-x: 0;
-  --underline-offset-y: 0;
   position: relative;
 }
 .catégorie .list_button::before {
@@ -39,7 +38,7 @@ body {
   height: 4px;
   background-color: black;
   width: var(--underline-width);
-  transform: translate(var(--underline-offset-x), var(--underline-offset-y));
+  transform: translateX(var(--underline-offset-x));
   transition: transform 0.5s, width 0.5s;
 }
 .catégorie .list_button .button {
