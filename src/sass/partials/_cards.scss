@@ -41,6 +41,24 @@
     }
 }
 
+.meals__categories.underline{
+    width: fit-content;
+    --underline-width: 0;
+    --underline-offset-x: 0;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 70%;
+        display: block;
+        height: 4px;
+        background-color: black;
+        width: var(--underline-width);
+        transform: translateX(var(--underline-offset-x));
+        transition: transform 0.5s, width 0.5s;
+    }
+}
+
 .meal-cards{
     display: flex;
     justify-content: space-between;

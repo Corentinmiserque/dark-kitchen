@@ -10,13 +10,15 @@ async function getMeals(cardsContainer, filtersContainer) {
     const response = await fetch("./assets/js/meals.json");
     const mealsJson = await response.json();
     
-    mealsJson.categories.forEach((category) => {
-        filtersContainer.appendChild(createFilter(category));
+    mealsJson.categories.forEach((category, index) => {
+        filtersContainer.appendChild(createFilter(category, index));
     });
     mealsJson.meals.forEach(meal => {
         let card = createCard(meal);
         cardsContainer.innerHTML += card;
     });
+
+    init();
 }
 
 const createCard = (meal) => {
@@ -52,13 +54,13 @@ const createCard = (meal) => {
     return card;
 }
 
-const createFilter = (filter) => {
+const createFilter = (filter, index) => {
     const filterBtn = document.createElement("button");
     const listItem = document.createElement("li");
     filterBtn.classList.add("meals__filter-btn", "btn");
     filterBtn.appendChild(document.createTextNode(filter));
     filterBtn.addEventListener("click", filterMeals)
-
+    
     listItem.classList.add("meals__categories__category");
     listItem.appendChild(filterBtn);
     return listItem;
@@ -67,6 +69,8 @@ const createFilter = (filter) => {
 const filterMeals = (event) => {
     let meals = document.querySelectorAll(".meal-card");
     let filterName = event.target.textContent;
+
+    console.log(event.target.parentNode);
     meals.forEach((meal) => {
         let mealCategory = meal.dataset.category;
         if (!mealCategory.includes(filterName) && filterName != "All"){
