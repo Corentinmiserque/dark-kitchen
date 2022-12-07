@@ -6,6 +6,7 @@
     width: 95%;
 }
 
+
 .meals__categories{
     font-size: clamp(14px, calc(1vw + 0.5rem), 18px);
     overflow-x: scroll;
@@ -25,12 +26,11 @@
 
 .meals__heading{
     font-size: clamp(20px, calc(1.5vw + 1rem),40px);
-    padding-left: 10px;
 }
 
 .meals__categories{
     background-color: #fff;
-    padding: 1em 10px;
+    padding: 1em 0;
     position: sticky;
     top: 0;
 
@@ -42,10 +42,8 @@
 }
 
 .meals__categories.underline{
-    width: fit-content;
     --underline-width: 0;
     --underline-offset-x: 0;
-    position: relative;
     &::before{
         content: "";
         position: absolute;
@@ -65,14 +63,13 @@
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 28px;
-    padding: 0 10px;
 }
 
 .meal-card{
     background-color: $lightGray;
     display: flex;
     flex-direction: column;
-    width: 98%;
+    width: 100%;
     &.hide{
         display: none;
     }
@@ -89,7 +86,7 @@
     flex-grow: 1;
     padding: 7px;
     .meal-card__heading{
-        font-size: clamp(15px, calc(1.5vw + 0.5rem),21px);
+        font-size: clamp(18px, calc(1.5vw + 0.5rem),21px);
         margin-bottom: 10px;
     }
 
@@ -145,19 +142,10 @@
 @media screen and (min-width: 1288px){
     .meal-cards{
         justify-content: unset;
+        column-gap: 1.333rem; 
     }
 
     .meal-card{
-        max-width: 297px;
-    }
-}
-
-@media screen and (min-width: 1400px){
-    .meal-cards{
-        justify-content: unset;
-        column-gap: 53px; 
-    }
-    .meal-card{
-        max-width: 297px;
+        width: calc(25% - 1rem);
     }
 }

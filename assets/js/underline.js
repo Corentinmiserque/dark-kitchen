@@ -1,6 +1,6 @@
 const menu = document.querySelector(".meals__categories");
 let pleft = window.getComputedStyle(menu).getPropertyValue('padding-left');
-pleft = Number(pleft.slice(0,  2));
+pleft = 0;
 
 function init() {
     var firstFilter = menu.firstElementChild;
