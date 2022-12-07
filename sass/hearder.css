@@ -43,7 +43,8 @@ header nav ul li {
   color: transparent;
 }
 header nav ul li:hover {
-  color: rgb(210, 204, 204);
+  color: #888585;
+  text-decoration: underline;
 }
 header .order {
   text-align: center;
@@ -58,6 +59,7 @@ header .order:hover {
   color: rgb(255, 255, 255);
   border: 0.2vw solid rgb(255, 255, 255);
   transition: 0.15s;
+  text-decoration: none;
 }
 
 .menu {
@@ -134,6 +136,7 @@ header .order:hover {
   background-color: #272727;
   color: white;
   padding: 1.5vw 1vw;
+  overflow: hidden;
 }
 .intro .kitchen_image {
   z-index: -1;
@@ -185,7 +188,8 @@ header .order:hover {
     color: rgb(32, 32, 32);
   }
   header nav ul li:hover {
-    color: rgb(79, 77, 77);
+    color: rgb(32, 32, 32);
+    text-decoration: underline;
   }
   header nav ul .order {
     margin: 0;
@@ -196,7 +200,8 @@ header .order:hover {
     color: #272727;
   }
   header nav ul .order:hover {
-    color: rgb(79, 77, 77);
+    color: rgb(32, 32, 32);
+    text-decoration: underline;
     border: none;
   }
   .intro .kitchen_container {

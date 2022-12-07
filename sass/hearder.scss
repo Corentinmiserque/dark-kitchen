@@ -39,7 +39,8 @@ header{
                 font-size: 5vw;
                 color: transparent;
                 &:hover{
-                    color: rgb(210, 204, 204);
+                    color: #888585;
+                    text-decoration: underline;
                 }
             }
         }
@@ -56,6 +57,7 @@ header{
             color:rgb(255, 255, 255);
             border: 0.2vw solid rgb(255, 255, 255);
             transition: 0.15s;
+            text-decoration: none;
         }
     }
     }
@@ -131,7 +133,7 @@ header{
         background-color: #272727;
         color: white;
         padding: 1.5vw 1vw;
-        
+        overflow: hidden;
     }
     }
     .kitchen_image{
@@ -186,7 +188,8 @@ body{
                     font-size: 1.5vw;
                     color:  rgb(32, 32, 32);
                     &:hover{
-                        color: rgb(79, 77, 77);
+                        color:  rgb(32, 32, 32);
+                        text-decoration: underline;
                     }
                 }
                 .order{
@@ -197,7 +200,8 @@ body{
                     font-size: 1.7vw;
                     color: #272727;
                     &:hover{
-                        color: rgb(79, 77, 77);
+                        color:  rgb(32, 32, 32);
+                        text-decoration: underline;
                         border: none;
                     }
                 }
