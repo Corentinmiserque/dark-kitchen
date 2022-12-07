@@ -59,6 +59,7 @@
         width: 90%;
     }
     &__menu{
+        width:33%;
         font-weight: 900;
         font-family: Playfair_Display;
         &--sublist{
@@ -95,6 +96,9 @@
         li {
             width: 10vw;
             height: 10vw;
+            &:hover{
+                opacity: 0.3;
+            }
             img{
                 width: 100%;
                 height: 100%;
@@ -122,6 +126,7 @@
             text-align: left;
         }
         &__menu{
+            width: auto;
             &--sublist{
                 display: flex;
                 .email{    
