@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: Montserrat;
-  src: url(../Fonts/Montserrat/static/Montserrat-Medium.ttf);
+  src: url(../assets/Fonts/Montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
   font-family: Playfair_Display;
-  src: url(../Fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf);
+  src: url(../assets/Fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
 }
 .footer {
   font-family: Montserrat;
