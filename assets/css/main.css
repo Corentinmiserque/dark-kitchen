@@ -149,6 +149,7 @@ header .order:hover {
 
 .intro {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 5rem;
 }
 .intro .kitchen_container {
@@ -175,9 +176,7 @@ header .order:hover {
 }
 .intro .kitchen_image {
   z-index: -1;
-  position: absolute;
   width: 40vw;
-  height: 140vw;
   right: 0vw;
   top: -9.5vw;
   background-image: url(https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
