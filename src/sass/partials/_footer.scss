@@ -1,0 +1,178 @@
+.footer{
+    font-family: Montserrat;
+    font-size: small;
+    background-color: black;
+    height:150vw;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &__description{
+        width: 90%;
+    }
+    h2{
+        font-family:Playfair_Display;
+    }
+    //fleche et sous menu footer
+    a{
+        color: white;
+        opacity: 0.8;
+    }
+    .arrow {
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-left: 10px;
+        margin-bottom: 1px;
+    }
+    
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        }
+    &__responsive{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    &__menu{
+        width:33%;
+        font-weight: 900;
+        font-family: Playfair_Display;
+        cursor: pointer;
+        &--sublist{
+            font-family: Montserrat;
+            font-weight:100;
+            display: none;
+            flex-direction: column;
+            li{
+            padding: 1vw;
+            a:hover{
+                text-decoration: underline;
+            }
+            }
+        }
+    }
+    .open{
+        .footer__menu--sublist{ 
+            display: flex;
+            animation: opacity 0.3s linear 0s 1 normal forwards;
+        }
+        .footer__menu--sublist{
+            display: flex;
+            animation: opacity 0.3s linear 0s 1 normal forwards;
+        }
+        li .arrow{
+            animation: rotation 0.2s linear 0s 1 normal forwards;
+        }
+    }
+
+    &__icons{
+        display: flex;
+        justify-content:space-around;
+        width: 90%;
+        li {
+            width: 10vw;
+            height: 10vw;
+            &:hover{
+                opacity: 0.3;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    hr{
+        width: 100%;
+    }
+
+    &__privacy{
+        width: 90%;
+        font-family: Montserrat;
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width:768px){
+    .footer{
+        height: 50vw;
+        .arrow{
+            display: none;
+        }
+        .contact{
+            text-align: left;
+        }
+        &__menu{
+            width: auto;
+            &--sublist{
+                display: flex;
+                .email{    
+                    background-image: url("../assets/icons/e-mail.png");
+                    background-size: 15px 15px ;
+                    background-repeat: no-repeat;
+                    background-position: left;       
+                }
+                .phone{    
+                    background-image: url("../assets/icons/appel-telephonique.png");
+                    background-size: 15px 15px ;
+                    background-repeat: no-repeat;
+                    background-position: left;
+                }
+                .Careers{    
+                    background-image: url("../assets/icons/study.png");
+                    background-size: 15px 15px ;
+                    background-repeat: no-repeat;
+                    background-position: left;                         
+                }
+                .FAQ{    
+                    background-image: url("../assets/icons/faq.png");
+                    background-size: 15px 15px ;
+                    background-repeat: no-repeat;
+                    background-position: left;                             
+                }
+                .city{    
+                    background-image: url("../assets/icons/map.png");
+                    background-size: 15px 15px ;
+                    background-repeat: no-repeat;
+                    background-position: left;                             
+                }
+                li{
+                    text-align: left;
+                    padding: 0.5vw 2vw;
+                }
+            }
+        }
+        &__icons{
+            li {
+                width: 3vw;
+                height: 3vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1048px){
+    .footer{
+        height: 35vw;
+    }
+}
+    
+
+
+//animation
+@keyframes rotation{
+	from {transform: rotate(0deg);}
+	to{transform: rotate(224deg);}
+}
+
+@keyframes opacity{
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+
