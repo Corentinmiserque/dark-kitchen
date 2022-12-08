@@ -2,7 +2,7 @@ const menu = document.querySelector(".meals__categories");
 let pleft = window.getComputedStyle(menu).getPropertyValue('padding-left');
 pleft = 0;
 
-function init() {
+function initUnderline() {
     var firstFilter = menu.firstElementChild;
     var last_button = firstFilter;
     menu.addEventListener("click",(e) =>{

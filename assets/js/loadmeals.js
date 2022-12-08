@@ -18,7 +18,7 @@ async function getMeals(cardsContainer, filtersContainer) {
         cardsContainer.innerHTML += card;
     });
 
-    init();
+    initUnderline();
 }
 
 const createCard = (meal) => {
