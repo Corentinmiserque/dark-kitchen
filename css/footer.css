@@ -74,17 +74,14 @@
 }
 .footer .open .footer__menu--sublist {
   display: flex;
-  -webkit-animation: opacity 0.3s linear 0s 1 normal forwards;
-          animation: opacity 0.3s linear 0s 1 normal forwards;
+  animation: opacity 0.3s linear 0s 1 normal forwards;
 }
 .footer .open .footer__menu--sublist {
   display: flex;
-  -webkit-animation: opacity 0.3s linear 0s 1 normal forwards;
-          animation: opacity 0.3s linear 0s 1 normal forwards;
+  animation: opacity 0.3s linear 0s 1 normal forwards;
 }
 .footer .open li .arrow {
-  -webkit-animation: rotation 0.2s linear 0s 1 normal forwards;
-          animation: rotation 0.2s linear 0s 1 normal forwards;
+  animation: rotation 0.2s linear 0s 1 normal forwards;
 }
 .footer__icons {
   display: flex;
@@ -171,28 +168,12 @@
     height: 35vw;
   }
 }
-@-webkit-keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(224deg);
-  }
-}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(224deg);
-  }
-}
-@-webkit-keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes opacity {
