@@ -20,6 +20,7 @@ async function getMeals(cardsContainer, filtersContainer) {
 
     initUnderline();
     panier();
+    display_prize()
 }
 
 const createCard = (meal) => {
