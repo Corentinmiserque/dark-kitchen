@@ -70,7 +70,6 @@ const filterMeals = (event) => {
     let meals = document.querySelectorAll(".meal-card");
     let filterName = event.target.textContent;
 
-    console.log(event.target.parentNode);
     meals.forEach((meal) => {
         let mealCategory = meal.dataset.category;
         if (!mealCategory.includes(filterName) && filterName != "All"){
