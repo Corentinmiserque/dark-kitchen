@@ -24,7 +24,7 @@ async function getMeals(cardsContainer, filtersContainer) {
 
 const createCard = (meal) => {
     const card = `
-        <article class="meal-card" data-category="${meal.category}">
+        <article class="meal-card" data-price=${meal.price} data-category="${meal.category}">
             <header class="meal-card__header">
                 <img src=${meal.image} alt=${meal.name}>
             </header>

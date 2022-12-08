@@ -11,6 +11,16 @@ function panier(){
             if(number>min){
                 number=number-1
                 test.lastElementChild.innerHTML=number
+                let prize=0;
+                list_prize=document.querySelectorAll(".meal-card__price")
+                list_quantity=document.querySelectorAll(".meals__cart-info__quantity")
+                n=list_prize.length
+                for (let i=0;i<n;i++){
+                    a=Number(list_quantity[i].innerHTML)
+                    b=Number(list_prize[i].innerHTML.substring(0,4).replace(",","."))
+                    prize=prize+(a*b)
+                    console.log(prize)
+                }
             }
         })
         add.addEventListener("click",(event) =>{
@@ -18,6 +28,16 @@ function panier(){
             let number = Number(test.lastElementChild.innerHTML);
             number=number+1
             test.lastElementChild.innerHTML=number
+            let prize=0;
+            list_prize=document.querySelectorAll(".meal-card__price")
+            list_quantity=document.querySelectorAll(".meals__cart-info__quantity")
+            n=list_prize.length
+            for (let i=0;i<n;i++){
+                a=Number(list_quantity[i].innerHTML)
+                b=Number(list_prize[i].innerHTML.substring(0,4).replace(",","."))
+                prize=prize+(a*b)
+                console.log(prize)
+            }
         })
-    } 
+    }
 }
