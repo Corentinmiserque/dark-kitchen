@@ -504,31 +504,31 @@ header .order:hover {
     display: flex;
   }
   .footer__menu--sublist .email {
-    background-image: url("../assets/icons/e-mail.png");
+    background-image: url("../../../assets/icons/e-mail.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
   }
   .footer__menu--sublist .phone {
-    background-image: url("../assets/icons/appel-telephonique.png");
+    background-image: url("../../../assets/icons/appel-telephonique.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
   }
   .footer__menu--sublist .Careers {
-    background-image: url("../assets/icons/study.png");
+    background-image: url("../../../assets/icons/study.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
   }
   .footer__menu--sublist .FAQ {
-    background-image: url("../assets/icons/faq.png");
+    background-image: url("../../../assets/icons/faq.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
   }
   .footer__menu--sublist .city {
-    background-image: url("../assets/icons/map.png");
+    background-image: url("../../assets/icons/map.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: left;
@@ -562,6 +562,4 @@ header .order:hover {
   to {
     opacity: 1;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
