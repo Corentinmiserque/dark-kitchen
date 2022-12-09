@@ -487,6 +487,9 @@ a {
 }
 
 @media screen and (min-width: 400px) {
+  .meals__categories {
+    overflow-x: unset;
+  }
   .meal-card {
     width: 47%;
   }
