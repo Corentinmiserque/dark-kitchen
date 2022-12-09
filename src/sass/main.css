@@ -31,7 +31,8 @@ button {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -48,133 +49,10 @@ a {
   border: none;
 }
 
-.nightmode {
-  width: 10vw;
-  height: 6vw;
-  border-radius: 5vw;
-  color: white;
-  border: white solid 0.2vw;
-  position: absolute;
-  top: 5.1vw;
-  left: 5vw;
-  display: flex;
-}
-.nightmode::before {
-  content: "";
-  position: absolute;
-  width: 5vw;
-  background-color: white;
-  height: 5vw;
-  border-radius: 5vw;
-  transform: translateY(0.2vw) translateX(0.3vw);
-  transition: 0.2s;
+header .nightmode {
+  background-color: blue;
 }
 
-.night {
-  color: #F2F2F2;
-  background-color: #000534;
-}
-.night body {
-  color: #F2F2F2;
-}
-.night .nightmode::before {
-  transform: translateY(0.2vw) translateX(4.3vw);
-}
-.night a {
-  background-color: white;
-}
-.night header li {
-  color: #F2F2F2;
-}
-.night header li a {
-  background-color: white;
-}
-.night header li:hover {
-  color: #F2F2F2;
-}
-.night .order {
-  background-color: #000534;
-  color: #F2F2F2;
-}
-.night .order:hover {
-  color: #F2F2F2;
-}
-.night footer {
-  background-color: #000E3A;
-}
-.night .meal-card {
-  background-color: #112452;
-}
-.night .meals__categories {
-  background-color: #000534;
-}
-.night .meals__filter-btn {
-  color: #F2F2F2;
-}
-.night .footer__responsive a {
-  background-color: #000E3A;
-}
-.night #add-to-cart-btn {
-  color: #F2F2F2;
-}
-.night #remove-from-cart-btn {
-  color: #F2F2F2;
-}
-.night .menu div {
-  background-color: #F2F2F2;
-}
-.night .menu::before {
-  background-color: #F2F2F2;
-}
-.night .menu::after {
-  background-color: #F2F2F2;
-}
-.night header nav {
-  background-color: #000E3A;
-  transition: 0s;
-}
-.night footer a {
-  background-color: #000E3A;
-}
-.night .intro .kitchen_container a {
-  background-color: #112452;
-}
-.night .meals__categories.underline::before {
-  background-color: #F2F2F2;
-}
-
-@media screen and (min-width: 768px) {
-  .nightmode {
-    width: 2.7vw;
-    height: 1.5vw;
-    border: red solid 0.1vw;
-    top: 1.3vw;
-    left: 33vw;
-  }
-  .nightmode::before {
-    width: 1.25vw;
-    background-color: red;
-    height: 1.25vw;
-    border-radius: 5vw;
-    transform: translateY(0.03vw) translateX(0.05vw);
-    transition: 0.2s;
-  }
-  .night header nav {
-    background-color: #000534;
-    transition: 0s;
-  }
-  .night .nightmode {
-    border: green solid 0.1vw;
-  }
-  .night .nightmode::before {
-    background-color: green;
-    transform: translateY(0.03vw) translateX(1.2vw);
-    transition: 0.2s;
-  }
-  header nav {
-    background-color: red;
-  }
-}
 header h1 {
   margin: 3.5vw 5vw 0;
   font-size: 6vw;
@@ -334,7 +212,6 @@ header .order:hover {
     left: 59vw;
     top: 1.9vw;
     transition: none;
-    height: 5vw;
   }
   header nav ul {
     text-align: center;
@@ -418,6 +295,7 @@ header .order:hover {
 .meals__categories {
   background-color: #fff;
   padding: 1em 0;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -445,7 +323,8 @@ header .order:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   row-gap: 28px;
 }
 
@@ -515,7 +394,8 @@ header .order:hover {
 @media screen and (min-width: 1288px) {
   .meal-cards {
     justify-content: unset;
-    column-gap: 1.333rem;
+    -moz-column-gap: 1.333rem;
+         column-gap: 1.333rem;
   }
   .meal-card {
     width: calc(25% - 1rem);
@@ -582,14 +462,17 @@ header .order:hover {
 }
 .footer .open .footer__menu--sublist {
   display: flex;
-  animation: opacity 0.3s linear 0s 1 normal forwards;
+  -webkit-animation: opacity 0.3s linear 0s 1 normal forwards;
+          animation: opacity 0.3s linear 0s 1 normal forwards;
 }
 .footer .open .footer__menu--sublist {
   display: flex;
-  animation: opacity 0.3s linear 0s 1 normal forwards;
+  -webkit-animation: opacity 0.3s linear 0s 1 normal forwards;
+          animation: opacity 0.3s linear 0s 1 normal forwards;
 }
 .footer .open li .arrow {
-  animation: rotation 0.2s linear 0s 1 normal forwards;
+  -webkit-animation: rotation 0.2s linear 0s 1 normal forwards;
+          animation: rotation 0.2s linear 0s 1 normal forwards;
 }
 .footer__icons {
   display: flex;
@@ -676,12 +559,28 @@ header .order:hover {
     height: 35vw;
   }
 }
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(224deg);
+  }
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(224deg);
+  }
+}
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @keyframes opacity {
@@ -691,6 +590,4 @@ header .order:hover {
   to {
     opacity: 1;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

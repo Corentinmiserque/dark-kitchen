@@ -51,3 +51,134 @@ a{
     background: none;
     border: none;
 }
+//nightmode
+.nightmode{
+    width: 10vw;
+    height: 6vw;
+    border-radius: 5vw;
+    color: white;
+   border: white solid 0.2vw;
+    position: absolute;
+    top: 5.1vw;
+    left: 5vw;
+    display: flex;
+    &::before{
+            content: "";
+            position: absolute;
+            width: 5vw;
+            background-color: white;
+            height: 5vw;
+            border-radius: 5vw; 
+            transform: translateY(0.2vw) translateX(0.3vw) ;
+            transition: 0.2s;
+    }
+    }
+    //nightmode on
+    .night {
+        body{
+            color: $whiteDark; 
+        }
+        color: $whiteDark;
+        background-color: $darkBlue;
+        .nightmode {
+            &::before{
+                transform: translateY(0.2vw) translateX(4.3vw) ;
+            }
+        }
+a{
+    background-color: white;
+}
+   header li{
+    color: $whiteDark;
+    a{
+        background-color: white;
+    }
+    &:hover{
+        color: $whiteDark;
+    }
+   }
+   .order{
+    background-color: $darkBlue;
+    color: $whiteDark;
+    &:hover{
+        color: $whiteDark
+    }
+   }
+    footer{
+        background-color: $veryDarkBlue;
+    }
+    .meal-card{
+        background-color: $lightBlue;
+    }
+    .meals__categories{
+        background-color: $darkBlue;
+    }
+    .meals__filter-btn {
+        color: $whiteDark;
+    }
+    .footer__responsive a{
+        background-color: $veryDarkBlue;
+    }
+    #add-to-cart-btn{
+        color: $whiteDark;
+    }
+    #remove-from-cart-btn{
+        color: $whiteDark;
+    }
+     .menu div{
+        background-color:$whiteDark;
+     } 
+     .menu::before{
+        background-color: $whiteDark;
+    }
+    .menu::after{
+        background-color:$whiteDark;
+    }
+    header nav{
+        background-color: $veryDarkBlue;
+        transition: 0s;
+    }
+    footer a {
+        background-color:  $veryDarkBlue;
+    }
+    .intro .kitchen_container a{
+    background-color: $lightBlue;
+   }
+   .meals__categories.underline::before{
+    background-color: $whiteDark;
+   }
+}
+@media screen and (min-width : 768px){  
+    .nightmode{
+        width: 2.7vw;
+        height: 1.5vw;
+        border: red solid 0.1vw;
+        top :1.3vw;
+        left: 33vw;
+        &::before{
+            width: 1.25vw;
+            background-color: red;
+            height: 1.25vw;
+            border-radius: 5vw; 
+            transform: translateY(0.03vw) translateX(0.05vw);
+            transition: 0.2s;
+    }  
+}
+.night{
+    header nav{
+        background-color:$darkBlue;
+        transition: 0s;
+    }
+    .nightmode{
+        border: green solid 0.1vw;
+        &::before{    
+            background-color: green;
+            transform:translateY(0.03vw) translateX(1.2vw) ;
+            transition: 0.2s;
+        }  
+    }
+}
+header nav{
+    background-color: red;
+}
+}  
