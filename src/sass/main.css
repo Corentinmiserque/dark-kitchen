@@ -31,7 +31,8 @@ button {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -48,174 +49,42 @@ a {
   border: none;
 }
 
-.main-header {
-  width: 95%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 22px;
-  display: flex;
-  justify-content: space-between;
-}
-.main-header h1 {
-.nightmode {
-  width: 10vw;
-  height: 6vw;
-  border-radius: 5vw;
-  color: white;
-  border: white solid 0.2vw;
-  position: absolute;
-  top: 5.1vw;
-  left: 5vw;
-  display: flex;
-}
-.nightmode::before {
-  content: "";
-  position: absolute;
-  width: 5vw;
-  background-color: white;
-  height: 5vw;
-  border-radius: 5vw;
-  transform: translateY(0.2vw) translateX(0.3vw);
-  transition: 0.2s;
+header .nightmode {
+  background-color: blue;
 }
 
-.night {
-  color: #F2F2F2;
-  background-color: #000534;
-}
-.night body {
-  color: #F2F2F2;
-}
-.night .nightmode::before {
-  transform: translateY(0.2vw) translateX(4.3vw);
-}
-.night a {
-  background-color: white;
-}
-.night header li {
-  color: #F2F2F2;
-}
-.night header li a {
-  background-color: white;
-}
-.night header li:hover {
-  color: #F2F2F2;
-}
-.night .order {
-  background-color: #000534;
-  color: #F2F2F2;
-}
-.night .order:hover {
-  color: #F2F2F2;
-}
-.night footer {
-  background-color: #000E3A;
-}
-.night .meal-card {
-  background-color: #112452;
-}
-.night .meals__categories {
-  background-color: #000534;
-}
-.night .meals__filter-btn {
-  color: #F2F2F2;
-}
-.night .footer__responsive a {
-  background-color: #000E3A;
-}
-.night #add-to-cart-btn {
-  color: #F2F2F2;
-}
-.night #remove-from-cart-btn {
-  color: #F2F2F2;
-}
-.night .menu div {
-  background-color: #F2F2F2;
-}
-.night .menu::before {
-  background-color: #F2F2F2;
-}
-.night .menu::after {
-  background-color: #F2F2F2;
-}
-.night header nav {
-  background-color: #000E3A;
-  transition: 0s;
-}
-.night footer a {
-  background-color: #000E3A;
-}
-.night .intro .kitchen_container a {
-  background-color: #112452;
-}
-.night .meals__categories.underline::before {
-  background-color: #F2F2F2;
-}
-
-@media screen and (min-width: 768px) {
-  .nightmode {
-    width: 2.7vw;
-    height: 1.5vw;
-    border: red solid 0.1vw;
-    top: 1.3vw;
-    left: 33vw;
-  }
-  .nightmode::before {
-    width: 1.25vw;
-    background-color: red;
-    height: 1.25vw;
-    border-radius: 5vw;
-    transform: translateY(0.03vw) translateX(0.05vw);
-    transition: 0.2s;
-  }
-  .night header nav {
-    background-color: #000534;
-    transition: 0s;
-  }
-  .night .nightmode {
-    border: green solid 0.1vw;
-  }
-  .night .nightmode::before {
-    background-color: green;
-    transform: translateY(0.03vw) translateX(1.2vw);
-    transition: 0.2s;
-  }
-  header nav {
-    background-color: red;
-  }
-}
 header h1 {
   margin: 3.5vw 5vw 0;
   font-size: 6vw;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
 }
-.main-header .main-nav {
+header nav {
   transform: translateY(-130vw);
   background-color: transparent;
   color: transparent;
   width: 100vw;
+  height: 110vw;
   position: absolute;
   left: 0;
   top: 0;
   transition: 0.25s;
 }
-.main-header .main-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 35px 0;
+header nav ul {
   text-align: center;
+  margin-top: 15vw;
 }
-.main-header .main-menu li {
+header nav ul li {
+  margin-bottom: 9vw;
   font-size: 5vw;
   color: transparent;
   list-style: none;
 }
-.main-header .main-menu li:hover {
+header nav ul li:hover {
   color: #888585;
   text-decoration: underline;
 }
-.main-header .order {
+header .order {
   text-align: center;
   margin: 0 38vw;
   background-color: transparent;
@@ -223,7 +92,7 @@ header h1 {
   color: transparent;
   font-weight: 500;
 }
-.main-header .order:hover {
+header .order:hover {
   background-color: transparent;
   color: rgb(255, 255, 255);
   border: 0.2vw solid rgb(255, 255, 255);
@@ -265,35 +134,34 @@ header h1 {
   transform: scale(0);
 }
 
-.active + .main-nav {
+.active + nav {
   transform: translateY(0);
   transition: 0.5s;
   color: white;
   background-color: #272727;
 }
-.active + .main-nav .order {
+.active + nav .order {
   color: #272727;
   background-color: white;
 }
-.active + .main-nav .order:hover {
+.active + nav .order:hover {
   background-color: transparent;
   color: white;
 }
-.active + .main-nav li {
+.active + nav li {
   color: white;
 }
 
 .intro {
-  width: 95%;
-  max-width: 1440px;
-  margin: 31px auto;
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 5rem;
 }
 .intro .kitchen_container {
   width: 50vw;
+  margin-left: 5vw;
 }
 .intro .kitchen_container h2 {
+  margin-top: 10vw;
   font-family: "Playfair Display", serif;
   font-size: 6vw;
   font-weight: 700;
@@ -302,7 +170,6 @@ header h1 {
   margin-top: 2.5vw;
   font-size: 3vw;
   margin-bottom: 5vw;
-  line-height: 1.4;
 }
 .intro .kitchen_container a {
   background-color: #272727;
@@ -312,8 +179,12 @@ header h1 {
   font-size: 3.5vw;
 }
 .intro .kitchen_image {
+  z-index: -1;
+  position: absolute;
   width: 40vw;
+  height: 140vw;
   right: 0vw;
+  top: -9.5vw;
   background-image: url(https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-size: 110vw;
   background-repeat: no-repeat;
@@ -324,46 +195,48 @@ header h1 {
   .menu {
     display: none;
   }
-  .main-header {
+  header {
     overflow: hidden;
   }
-  .main-header h1 {
+  header h1 {
+    margin-top: 1vw;
+    margin-left: 5vw;
     font-size: 3vw;
   }
-  .main-header .main-nav {
+  header nav {
     display: inline-block;
     flex-direction: column;
     transform: translateY(0);
     background-color: transparent;
-    position: relative;
     width: 40vw;
+    left: 59vw;
+    top: 1.9vw;
     transition: none;
-    height: 5vw;
   }
-  .main-header .main-nav .main-menu {
-    padding: 0;
+  header nav ul {
     text-align: center;
     height: 3vw;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
+    margin-top: 1vw;
+    display: flex;
   }
-  .main-header .main-nav .main-menu li {
+  header nav ul li {
+    margin-left: 2.5vw;
     font-size: 1.5vw;
     color: rgb(32, 32, 32);
   }
-  .main-header .main-nav .main-menu li:hover {
+  header nav ul li:hover {
     color: rgb(32, 32, 32);
     text-decoration: underline;
   }
-  .main-header .main-nav .main-menu .order {
+  header nav ul .order {
     margin: 0;
+    margin-left: 3vw;
     background: none;
     font-weight: 700;
     font-size: 1.7vw;
     color: #272727;
   }
-  .main-header .main-nav .main-menu .order:hover {
+  header nav ul .order:hover {
     color: rgb(32, 32, 32);
     text-decoration: underline;
     border: none;
@@ -373,6 +246,7 @@ header h1 {
   }
   .intro .kitchen_container h2 {
     font-size: 4vw;
+    margin-top: 5vw;
   }
   .intro .kitchen_container p {
     font-size: 1.3vw;
@@ -387,6 +261,7 @@ header h1 {
     width: 45vw;
     height: 35vw;
     background-size: 50vw;
+    margin-right: 1vw;
   }
 }
 .meals {
@@ -420,6 +295,7 @@ header h1 {
 .meals__categories {
   background-color: #fff;
   padding: 1em 0;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -447,7 +323,8 @@ header h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   row-gap: 28px;
 }
 
@@ -517,7 +394,8 @@ header h1 {
 @media screen and (min-width: 1288px) {
   .meal-cards {
     justify-content: unset;
-    column-gap: 1.333rem;
+    -moz-column-gap: 1.333rem;
+         column-gap: 1.333rem;
   }
   .meal-card {
     width: calc(25% - 1rem);
@@ -584,14 +462,17 @@ header h1 {
 }
 .footer .open .footer__menu--sublist {
   display: flex;
-  animation: opacity 0.3s linear 0s 1 normal forwards;
+  -webkit-animation: opacity 0.3s linear 0s 1 normal forwards;
+          animation: opacity 0.3s linear 0s 1 normal forwards;
 }
 .footer .open .footer__menu--sublist {
   display: flex;
-  animation: opacity 0.3s linear 0s 1 normal forwards;
+  -webkit-animation: opacity 0.3s linear 0s 1 normal forwards;
+          animation: opacity 0.3s linear 0s 1 normal forwards;
 }
 .footer .open li .arrow {
-  animation: rotation 0.2s linear 0s 1 normal forwards;
+  -webkit-animation: rotation 0.2s linear 0s 1 normal forwards;
+          animation: rotation 0.2s linear 0s 1 normal forwards;
 }
 .footer__icons {
   display: flex;
@@ -678,12 +559,28 @@ header h1 {
     height: 35vw;
   }
 }
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(224deg);
+  }
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(224deg);
+  }
+}
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @keyframes opacity {
@@ -693,6 +590,4 @@ header h1 {
   to {
     opacity: 1;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
