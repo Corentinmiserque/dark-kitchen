@@ -13,23 +13,27 @@
     <script src="assets/js/header.js" defer></script>
     <script defer src="assets/js/footer.js"></script>
     <script src="assets/js/underline.js" defer></script>
+    <script src="assets/js/panier.js" defer></script>
     <script src="assets/js/loadmeals.js" defer></script>
+    <script src="assets/js/nightmode.js" defer></script>
+
+   
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>D&K</h1>
 
         <div class="menu" id="menu-btn">
             <div></div>
         </div>
-
-        <nav>
-            <ul>
+        <nav class="main-nav">
+            <ul class="main-menu">
                 <li>Home</li>
                 <li>Service</li>
                 <li>About</li>
                 <li>Contact</li>
                 <li class="order">Order</li>
+                <li class="nightmode"></li>
             </ul>
         </nav>
     </header>
@@ -46,6 +50,7 @@
         <section class="meals">
             <h2 class="meals__heading">What will you be having ?</h2>
             <ul class="meals__categories underline" id="filters"></ul>
+            <div class="meals_total"></div>
             <div class="meal-cards" id="meal-cards"></div>
         </section>
     </main>

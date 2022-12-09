@@ -1,221 +1,211 @@
-header{
-    
-    h1{
-        margin: 3.5vw 5vw 0;
-        font-size: 6vw;
-        font-family: 'Playfair Display', serif;
-        font-weight: 400;
-    }
-    nav{
-        transform: translateY(-130vw);
-        background-color:transparent;
-        color: transparent;
-        width: 100vw;
-        height: 110vw;
-        position: absolute;
-        left: 0;
-        top: 0;
-        transition: 0.25s;
-        ul{
-            text-align: center;
-            margin-top: 15vw;
-            li{
-                margin-bottom: 9vw;
-                font-size: 5vw;
-                color: transparent;
-                list-style: none;
-                &:hover{
-                    color: #888585;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-    .order{
-        text-align: center;
-        margin: 0 38vw;
-        background-color: transparent;
-        border-radius: 5vw;
-        color: transparent;
-        font-weight: 500;
-        &:hover{
-            background-color: transparent;
-            color:rgb(255, 255, 255);
-            border: 0.2vw solid rgb(255, 255, 255);
-            transition: 0.15s;
-            text-decoration: none;
-        }
-    }
-    }
-    //menu hamburger
-    //before on click
-  .menu {
-    top: 7.7vw;
-    left: 95vw;
-    transform: translate(-50%, -50%);
+.main-header {
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font-size: 6vw;
+    font-weight: 400;
+  }
+  .main-nav {
+    transform: translateY(-130vw);
+    background-color: transparent;
+    color: transparent;
+    width: 100vw;
     position: absolute;
-    z-index: 10;
-    width: 6vw;
-  }
-  .menu:before,
-  .menu:after,
-  .menu div {
-    background-color: black;
-    content: "";
-    display: block;
-    height: 0.5vw;
-    border-radius: 3px;
-    margin: 1.3vw 0;
-  }
-   // after on click
-   .active:before {
-        transform: translateY(1.8vw) rotate(135deg);
-        background-color:white;
-      }
-      .active:after {
-        transform: translateY(-1.8vw) rotate(-135deg);
-        background-color: white;
-      }
-      .active div {
-        transform: scale(0);
-      }
-   .active + nav{
-    transform: translateY(0);
-    transition: 0.5s; 
-    color: white;
-    background-color: #272727;
-    .order{
-        color: #272727;
-        background-color: white;
-        &:hover{
-            background-color:transparent;
-            color: white;
-        }
-    }
-    li{
-        color: white;
-    }
-   
-} 
-
-.intro{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5rem;
-
-    .kitchen_container{
-    width: 50vw;
-    margin-left: 5vw;
-    h2{
-        margin-top:10vw;
-        font-family: 'Playfair Display', serif;
-        font-size: 6vw;
-        font-weight: 700;
-    }
-    p{
-        margin-top: 2.5vw;
-        font-size: 3vw;
-        margin-bottom: 5vw;
-    }
-    a{
-        background-color: #272727;
-        color: white;
-        padding: 1.5vw 1vw;
-        overflow: hidden;
-        font-size: 3.5vw;
-    }
-    }
-    .kitchen_image{
-        z-index: -1;
-        // position: absolute;
-        width: 40vw;
-        // height: 140vw;
-        right: 0vw;
-        top: -9.5vw;
-        background-image: url(https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-        background-size: 110vw;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    
-    
-
-    
+    left: 0;
+    top: 0;
+    transition: 0.25s;
 }
- @media screen and (min-width : 768px){  
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 35px 0;
+  text-align: center;
+  li {
+    font-size: 5vw;
+    color: transparent;
+    list-style: none;
+    &:hover {
+      color: #888585;
+      text-decoration: underline;
+    }
+  }
+}
+.order {
+    text-align: center;
+    margin: 0 38vw;
+    background-color: transparent;
+    border-radius: 5vw;
+    color: transparent;
+    font-weight: 500;
+    &:hover {
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+      border: 0.2vw solid rgb(255, 255, 255);
+      transition: 0.15s;
+      text-decoration: none;
+    }
+  }
+}
+//menu hamburger
+//before on click
+.menu {
+  top: 7.7vw;
+  left: 95vw;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 10;
+  width: 6vw;
+}
+.menu:before,
+.menu:after,
+.menu div {
+  background-color: black;
+  content: "";
+  display: block;
+  height: 0.5vw;
+  border-radius: 3px;
+  margin: 1.3vw 0;
+}
+// after on click
+.active:before {
+  transform: translateY(1.8vw) rotate(135deg);
+  background-color: white;
+}
+.active:after {
+  transform: translateY(-1.8vw) rotate(-135deg);
+  background-color: white;
+}
+.active div {
+  transform: scale(0);
+}
+.active + .main-nav {
+  transform: translateY(0);
+  transition: 0.5s;
+  color: white;
+  background-color: #272727;
+  .order {
+    color: #272727;
+    background-color: white;
+    &:hover {
+      background-color: transparent;
+      color: white;
+    }
+  }
+  li {
+    color: white;
+  }
+}
 
-    .menu{
-        display: none;
+.intro {
+  width: 95%;
+  max-width: 1440px;
+  margin: 31px auto;
+  display: flex;
+  justify-content: space-between;
+
+  .kitchen_container {
+    width: 50vw;
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 6vw;
+      font-weight: 700;
     }
-    header{
-        overflow: hidden;
-        
-        h1{
-            margin-top: 1vw;
-            margin-left: 5vw;
-            font-size: 3vw;
-        }
-        nav{
-            display: inline-block;
-            flex-direction: column;
-            transform: translateY(0);
-            background-color: transparent;
-            width: 40vw;
-            left: 59vw;
-            top: 1.9vw;
-            transition: none;
-            ul{
-                text-align: center;
-                height: 3vw;
-                margin-top: 1vw;
-                display: flex;
-                li{
-                    margin-left: 2.5vw;
-                    font-size: 1.5vw;
-                    color:  rgb(32, 32, 32);
-                    &:hover{
-                        color:  rgb(32, 32, 32);
-                        text-decoration: underline;
-                    }
-                }
-                .order{
-                    margin: 0;
-                    margin-left: 3vw;
-                    background: none;
-                    font-weight: 700;
-                    font-size: 1.7vw;
-                    color: #272727;
-                    &:hover{
-                        color:  rgb(32, 32, 32);
-                        text-decoration: underline;
-                        border: none;
-                    }
-                }
-            }
-        }}
-        .intro{
-            .kitchen_container{
-                width: 30vw;
-                h2{
-                    font-size: 4vw;
-                    margin-top: 5vw;
-                }
-                p{
-                    font-size: 1.3vw;
-                    margin-bottom: 3vw;
-                }
-                a{
-                    padding: 0.5vw ;
-                    font-size: 1.3vw;
-                }
-            }
-            .kitchen_image{
-                top: 7.5vw;
-                width: 45vw;
-                height: 35vw;
-                background-size: 50vw;
-                margin-right: 1vw;
-            }
-        }
+    p {
+      margin-top: 2.5vw;
+      font-size: 3vw;
+      margin-bottom: 5vw;
+      line-height: 1.4;
     }
+    a {
+      background-color: #272727;
+      color: white;
+      padding: 1.5vw 1vw;
+      overflow: hidden;
+      font-size: 3.5vw;
+    }
+  }
+  .kitchen_image {
+    width: 40vw;
+    right: 0vw;
+    background-image: url(https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: 110vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .main-header {
+    overflow: hidden;
+
+    h1 {
+      font-size: 3vw;
+    }
+    .main-nav {
+      display: inline-block;
+      flex-direction: column;
+      transform: translateY(0);
+      background-color: transparent;
+      position: relative;
+      width: 40vw;
+      transition: none;
+      .main-menu {
+        padding: 0;
+        text-align: center;
+        height: 3vw;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        li {
+          font-size: 1.5vw;
+          color: rgb(32, 32, 32);
+          &:hover {
+            color: rgb(32, 32, 32);
+            text-decoration: underline;
+          }
+        }
+        .order {
+          margin: 0;
+          background: none;
+          font-weight: 700;
+          font-size: 1.7vw;
+          color: #272727;
+          &:hover {
+            color: rgb(32, 32, 32);
+            text-decoration: underline;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .intro {
+    .kitchen_container {
+      width: 30vw;
+      h2 {
+        font-size: 4vw;
+      }
+      p {
+        font-size: 1.3vw;
+        margin-bottom: 3vw;
+      }
+      a {
+        padding: 0.5vw;
+        font-size: 1.3vw;
+      }
+    }
+    .kitchen_image {
+      top: 7.5vw;
+      width: 45vw;
+      height: 35vw;
+      background-size: 50vw;
+    }
+  }
+}
