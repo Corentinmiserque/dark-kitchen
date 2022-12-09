@@ -48,38 +48,45 @@ a {
   border: none;
 }
 
-header h1 {
-  margin: 3.5vw 5vw 0;
+.main-header {
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-header h1 {
   font-size: 6vw;
-  font-family: "Playfair Display", serif;
   font-weight: 400;
 }
-header nav {
+.main-header .main-nav {
   transform: translateY(-130vw);
   background-color: transparent;
   color: transparent;
   width: 100vw;
-  height: 110vw;
   position: absolute;
   left: 0;
   top: 0;
   transition: 0.25s;
 }
-header nav ul {
+.main-header .main-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 35px 0;
   text-align: center;
-  margin-top: 15vw;
 }
-header nav ul li {
-  margin-bottom: 9vw;
+.main-header .main-menu li {
   font-size: 5vw;
   color: transparent;
   list-style: none;
 }
-header nav ul li:hover {
+.main-header .main-menu li:hover {
   color: #888585;
   text-decoration: underline;
 }
-header .order {
+.main-header .order {
   text-align: center;
   margin: 0 38vw;
   background-color: transparent;
@@ -87,7 +94,7 @@ header .order {
   color: transparent;
   font-weight: 500;
 }
-header .order:hover {
+.main-header .order:hover {
   background-color: transparent;
   color: rgb(255, 255, 255);
   border: 0.2vw solid rgb(255, 255, 255);
@@ -129,35 +136,35 @@ header .order:hover {
   transform: scale(0);
 }
 
-.active + nav {
+.active + .main-nav {
   transform: translateY(0);
   transition: 0.5s;
   color: white;
   background-color: #272727;
 }
-.active + nav .order {
+.active + .main-nav .order {
   color: #272727;
   background-color: white;
 }
-.active + nav .order:hover {
+.active + .main-nav .order:hover {
   background-color: transparent;
   color: white;
 }
-.active + nav li {
+.active + .main-nav li {
   color: white;
 }
 
 .intro {
+  width: 95%;
+  max-width: 1440px;
+  margin: 31px auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5rem;
 }
 .intro .kitchen_container {
   width: 50vw;
-  margin-left: 5vw;
 }
 .intro .kitchen_container h2 {
-  margin-top: 10vw;
   font-family: "Playfair Display", serif;
   font-size: 6vw;
   font-weight: 700;
@@ -166,6 +173,7 @@ header .order:hover {
   margin-top: 2.5vw;
   font-size: 3vw;
   margin-bottom: 5vw;
+  line-height: 1.4;
 }
 .intro .kitchen_container a {
   background-color: #272727;
@@ -175,10 +183,8 @@ header .order:hover {
   font-size: 3.5vw;
 }
 .intro .kitchen_image {
-  z-index: -1;
   width: 40vw;
   right: 0vw;
-  top: -9.5vw;
   background-image: url(https://images.pexels.com/photos/2537605/pexels-photo-2537605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-size: 110vw;
   background-repeat: no-repeat;
@@ -189,48 +195,45 @@ header .order:hover {
   .menu {
     display: none;
   }
-  header {
+  .main-header {
     overflow: hidden;
   }
-  header h1 {
-    margin-top: 1vw;
-    margin-left: 5vw;
+  .main-header h1 {
     font-size: 3vw;
   }
-  header nav {
+  .main-header .main-nav {
     display: inline-block;
     flex-direction: column;
     transform: translateY(0);
     background-color: transparent;
+    position: relative;
     width: 40vw;
-    left: 59vw;
-    top: 1.9vw;
     transition: none;
   }
-  header nav ul {
+  .main-header .main-nav .main-menu {
+    padding: 0;
     text-align: center;
     height: 3vw;
-    margin-top: 1vw;
-    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
   }
-  header nav ul li {
-    margin-left: 2.5vw;
+  .main-header .main-nav .main-menu li {
     font-size: 1.5vw;
     color: rgb(32, 32, 32);
   }
-  header nav ul li:hover {
+  .main-header .main-nav .main-menu li:hover {
     color: rgb(32, 32, 32);
     text-decoration: underline;
   }
-  header nav ul .order {
+  .main-header .main-nav .main-menu .order {
     margin: 0;
-    margin-left: 3vw;
     background: none;
     font-weight: 700;
     font-size: 1.7vw;
     color: #272727;
   }
-  header nav ul .order:hover {
+  .main-header .main-nav .main-menu .order:hover {
     color: rgb(32, 32, 32);
     text-decoration: underline;
     border: none;
@@ -240,7 +243,6 @@ header .order:hover {
   }
   .intro .kitchen_container h2 {
     font-size: 4vw;
-    margin-top: 5vw;
   }
   .intro .kitchen_container p {
     font-size: 1.3vw;
@@ -255,7 +257,6 @@ header .order:hover {
     width: 45vw;
     height: 35vw;
     background-size: 50vw;
-    margin-right: 1vw;
   }
 }
 .meals {
